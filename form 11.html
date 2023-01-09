@@ -1,0 +1,115 @@
+<!-- IN THIS WE WILL BE LEARNING THAT HOW TO CREATE THE 
+FORM USING HTML NLY WHICH INCLUDES FORMS,INPUT,LABEL,CHECKBOX,BUTTONS, THE NAME ATTRIBUTES
+redirecting to someone's server, -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <!-- In form we create a contrainer that does not have nay visual effect 
+    we then fill the form with a collection of inputs, checkboxes, buttons , etc.. -->
+<h1>Forms demo</h1>
+<form action="adarsh">
+<p><label for="form"> Enter the usarname:</label>
+<input id="form" type="text" placeholder="username dal madharchod">
+</p> <!--any kind of text input and by appliying the lebel command we 
+can label it just by giving the same id to it and the command that is label for="id"  -->
+
+<p>
+ <label for="entr"> Enter your passwor:</label>
+<input id="entr" type="password"placeholder="password dal beta"> 
+<!-- when we want to have password 
+and the name attribute is used to give the place where we want to send the data of the 
+respective section  aur sabki value usko send hogi and us postion pe ham koi 
+data ya file save kar sakte hai jo wo admi hi khol sakta hai.-->
+</p>
+
+<p>
+<label for="color selection"> Please choose the color:
+</label>
+<input id="color selection" type="color"> 
+<!-- any type of color input --></p>
+
+<p>
+    <label for="dobs">Enter the month of birth:
+    </label>
+<input id="dobs" type="month"placeholder="DOB">
+ <!--when we wnat to add the month input  -->
+</p>
+<p>
+    <label for="number dal">Enter the code digit:</label>
+<input id="nuber dal" type="number" placeholder="enter the mobile number"> 
+<!-- when we want to add the number --></p>
+
+<p>
+    <label for="the range"> Give the range data please:</label>
+<input id="range" type="range" min="0" max="20" placeholder="give us rating">
+<!-- when we want range -->
+</p>
+<!-- destination where we want to [put t<he data] an http request will be made-->
+<label for="Adarsh"> Before login confirm you are not a robot</label>
+<input type="checkbox" name="Adarsh" id="Adarsh">
+<P>
+    <button> Submit</button>
+    <!-- If we will add the buttons inside the form tag all buttons will lead to similar output
+    or at same place --></P>
+    <p>
+        <h2> Redirecting to reddit</h2>
+        <form action="adarsh singh">
+        <input type="text" name="q">
+        <button> Search Redit</button>
+    </form>
+    </P>
+    <!-- So what we did basically that in form action we provided the redit
+    search link then we created a form input to search that thing and added a name attribut to complete
+the search link we can do for google to -->
+
+<h2>Redirecting to google</h2>
+<form action="https://www.google.com/search">
+    <input type="text" name="q">
+    <button> Search google!!</button>
+</form>
+
+
+<h2> checkboxes</h2>
+<input type="checkbox" id="agree" checked>
+<label for="agree">I agree to tghe terms and the conditions.</labell>
+
+
+    <!-- now we are going to read about radio checkboxes there we 
+    can selecte any one option out the following given many datas. -->
+
+<p>
+    <h3>Answer the security question 
+        
+        <p>My shirt size?</p> </h3>
+<label for="one"> 32</label>
+<input type="radio" name="sze" ID="one" value="32">
+<label for="two"> 34</label>
+<input type="radio" name="sze" id="34" value="34">
+<label for="three"> 36</label>
+<input type="radio" name="sze" id="three" value="36">
+</p>
+<label for="pet"> Which is my favorite Pet?</label>
+<select name="pet" id=" meal">
+    <option value="fish"> Fish</option>
+    <option value="dog"> Dog</option>
+    <option value="Cat"> Cat</option>
+    <option value="lion"> lion</option>
+</select>
+<h1> Type about yourself</h1>
+<label for="details"> Tell us about yourself in 100 words</label>
+<textarea id="details" name="details"
+rows="10" cols="40"> I am a good boy... </textarea>
+<h1> Validation</h1>
+<label for=" passcode"> Enter the passcode</label>
+<input id ="passcode" type="text" name="passcode" required minlength="7" maxlength="10"> 
+<button>Submit</button>
+<label for=" email"> Enter the email</label>
+<input id ="passcode" type="email" name="email" required minlength="7" maxlength="10" required> 
+</body>
+</html>
